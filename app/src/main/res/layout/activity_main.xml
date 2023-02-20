@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ptName"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvIdiotScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="3"
+        android:scaleY="3"
+        android:text="Hello There!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.702" />
+
+    <Button
+        android:id="@+id/btnIdiotScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Idiot Score"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIdiotScore" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="264dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="write name here pls"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="now what?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <ImageView
+        android:id="@+id/ivJoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnName"
+        app:srcCompat="@drawable/kekwsmall" />
+
+    <TextView
+        android:id="@+id/tvJoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="ur mom"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivJoke" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="100dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/tvIdiotScore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
